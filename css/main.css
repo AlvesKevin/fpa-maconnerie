@@ -6,11 +6,29 @@ html body{
 
 header{
     width: 100%;
-    height: 100px;
+    height: 110px;
     background-color: rgba(0, 0, 0, 0.45);
     position: fixed;
     top: 0;
     display: flex;
+}
+
+#logo-header{
+    width: 220px;
+    height: 90px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/backgroundHeaderConstruction.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav{
@@ -25,17 +43,27 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    width: 400px;
     height: 100%;
-    background-color: #b4b4ff;
-    margin-top: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+    font-weight: 300;
+}
+
+nav ul li a:hover{
+    color: #FF8233;
 }
 
 .btn{
     width: 200px;
     height: 60px;
     border-radius: 10px;
-    background-color: #b4b4ff;
+    background-color: #FF8233;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,8 +73,17 @@ nav ul{
     font-weight: 500;
 }
 
+.btn:hover{
+    background-color: #ff934d;
+}
+
 .btn a{
     color: white;
+}
+
+header .btn{
+    margin-right: 50px;
+    margin-top: 25px;
 }
 
 li{
@@ -56,4 +93,573 @@ li{
 
 a{
     text-decoration: none;
+}
+
+#container-text{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
+    margin-left: 200px;
+
+}
+
+#container-text h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+#container-text p{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin-top: 0;
+}
+
+#btn-slide-container{
+    margin-top: 150px;
+    width: 340px;
+}
+
+.slide{
+    width: 326px;
+    height: 94px;
+    background: rgba(29, 29, 29, 0.78);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: width 0.5s, background 0.5s;
+    float: right;
+}
+
+.slide:hover{
+    width: 345px;
+    background: #ff934d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slide img{
+    width: 48px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.slide h3{
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.slide p{
+    width: 90%;
+    font-size: 18px;
+    color: white;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+#page1{
+    width: 100%;
+}
+
+#container-nos-creations-home{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+#container-texte-nos-creations-home{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#container-texte-nos-creations-home h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#container-texte-nos-creations-home p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#container-texte-nos-creations-home .separation{
+    width: 300px;
+    height: 3px;
+    background-color: #FF8233;
+}
+
+#container-texte-nos-creations-home .btn{
+    margin-top: 20px;
+}
+
+/*------------*/
+
+#container-notre-histoire-home{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+
+#container-texte-notre-histoire-home{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#container-notre-histoire-home h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#container-notre-histoire-home p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#container-notre-histoire-home .separation{
+    width: 300px;
+    height: 3px;
+    background-color: #FF8233;
+}
+
+#container-notre-histoire-home .btn{
+    margin-top: 20px;
+}
+
+.bandeau-contactez-nous{
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/backgroundBandeauContact.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandeau-contactez-nous p{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    background-color: #1D1D1D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+footer img{
+    width: 250px;
+    margin-top: 25px;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: #FF8233;
+}
+
+footer h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF8233;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+/*--------------------- Notre histoire --------------------*/
+
+#background-notre-histoire{
+    width: 100%;
+    height: 480px;
+    background-image: url("../img/backgroundNotreHistoire.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+#background-notre-histoire h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#background-notre-histoire p{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#container-notre-histoire{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+#container-texte-notre-histoire{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#container-texte-notre-histoire h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#container-texte-notre-histoire p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#container-texte-notre-histoire .separation{
+    width: 300px;
+    height: 3px;
+    background-color: #FF8233;
+}
+
+#container-texte-notre-histoire .btn{
+    margin-top: 20px;
+}
+
+/*--------------Nos réalisations------------*/
+
+.background-nos-realisations{
+    width: 100%;
+    height: 789px;
+    background-image: url("../img/backgroundNosRealisations.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.background-nos-realisations h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.background-nos-realisations p{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.container-titre-image-nos-realisations{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.container-titre-image-nos-realisations .separation{
+    width: 200px;
+    height: 3px;
+    background-color: #FF8233;
+    margin-bottom: 50px;
+}
+
+.container-image-nos-realisation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/*--------------Construction------------*/
+
+.background-construction{
+    width: 100%;
+    height: 789px;
+    background-image: url("../img/backgroundConstruction.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.background-construction h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.background-construction p{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.titre-service{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.titre-service .separation{
+    width: 40%;
+    height: 3px;
+    background-color: #FF8233;
+    margin: 10px auto;
+}
+
+.titre-service h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titre-service p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.titre-exemple-service{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.titre-exemple-service .separation{
+    width: 200px;
+    height: 3px;
+    background-color: #FF8233;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titre-exemple-service h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titre-exemple-service p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 55%;
+}
+
+.container-image-service{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+/*--------------Extension------------*/
+
+.background-extension{
+    width: 100%;
+    height: 789px;
+    background-image: url("../img/backgroundExtension.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.background-extension h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.background-extension p{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/*--------------Assainissement------------*/
+
+.background-assainissement{
+    width: 100%;
+    height: 789px;
+    background-image: url("../img/backgroundAssainissement.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.background-assainissement h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.background-assainissement p{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/*--------------Amenagement exterieur------------*/
+
+.background-amenagement-exterieur{
+    width: 100%;
+    height: 789px;
+    background-image: url("../img/backgroundAmenagementExterieur.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.background-amenagement-exterieur h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.background-amenagement-exterieur p{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/*--------------Ravalement------------*/
+
+.background-ravalement{
+    width: 100%;
+    height: 789px;
+    background-image: url("../img/backgroundRavalement.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.background-ravalement h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+.background-ravalement p{
+    width: 55%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+/*--------------Contact------------*/
+
+#page-contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-top: 110px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#page-contact a{
+    color: #1D1D1D;
+    text-decoration: none;
+}
+
+#page-contact a:hover{
+    color: #FF8233;
+    text-decoration: none;
+}
+
+#container-coordonnee{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+#container-coordonnee .separation{
+    width: 200px;
+    height: 3px;
+    background-color: #FF8233;
+    margin-bottom: 10px;
+}
+
+
+#container-coordonnee h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#container-coordonnee h3{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+#container-coordonnee p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0;
 }

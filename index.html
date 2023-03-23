@@ -16,64 +16,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      function changerConstruction() {
+        document.getElementById("page1").style.backgroundImage = "url('img/backgroundHeaderConstruction.png')";
+        document.getElementById("titre-header").textContent = "La div a été changée !";
+        document.getElementById("paragraphe-header").textContent = "Le texte il a changer";
+        document.getElementById("bouton-header").href = "construction.html";
+
+      }
+
+      function changerExtension() {
+        document.getElementById("page1").style.backgroundImage = "url('img/backgroundHeaderExtension.jpg')";
+        document.getElementById("titre-header").textContent = "La div a été changée !";
+        document.getElementById("paragraphe-header").textContent = "Le texte il a changer";
+        document.getElementById("bouton-header").href = "extension.html";
+      }
+
+      function changerAssainissement() {
+        document.getElementById("page1").style.backgroundImage = "url('img/backgroundHeaderAssainissement.jpg')";
+        document.getElementById("titre-header").textContent = "La div a été changée !";
+        document.getElementById("paragraphe-header").textContent = "Le texte il a changer";
+        document.getElementById("bouton-header").href = "assainissement.html";
+      }
+
+      function changerAmenagementExterieur() {
+        document.getElementById("page1").style.backgroundImage = "url('img/backgroundHeaderAmenagementExterieur.jpg')";
+        document.getElementById("titre-header").textContent = "La div a été changée !";
+        document.getElementById("paragraphe-header").textContent = "Le texte il a changer";
+        document.getElementById("bouton-header").href = "amenagementExterieur.html";
+      }
+
+      function changerRavalement() {
+        document.getElementById("page1").style.backgroundImage = "url('img/backgroundHeaderRavalement.jpg')";
+        document.getElementById("titre-header").textContent = "La div a été changée !";
+        document.getElementById("paragraphe-header").textContent = "Le texte il a changer";
+        document.getElementById("bouton-header").href = "ravalement.html";
+      }
+    </script>
 </head>
 
 <body>
 <header>
-  <img src="img/logo.png" alt="logo">
+  <a href="index.html"><img id="logo-header" src="img/logo.png" alt="logo"></a>
     <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="notreHistoire.html">Notre histoire</a></li>
-          <li><a href="nosCreations.html">Nos créations</a></li>
+          <li><a href="nosRealisations.html">Nos créations</a></li>
         </ul>
       </nav>
-      <div class="btn">
-        <a href="contact.html">Contact</a>
-      </div>
+      <a href="contact.html"><div class="btn">Contact</div></a>
 </header>
 
 <div id="page1">
-  <div>
-    <h2>Lorem ipsum dolor sit amet. </h2>
-    <p>Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt.</p>
+  <div id="container-text">
+    <h2 id="titre-header">Lorem ipsum dolor sit amet. </h2>
+    <p id="paragraphe-header">Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt.</p>
     <div class="btn">
-      <a href="construction.html">En savoirs plus</a>
+      <a id="bouton-header" href="construction.html">En savoirs plus</a>
     </div>
   </div>
   <div id="btn-slide-container">
-    <div class="slide">
-        <img src="img/maconnerie.jpg" alt="maçonnerie">
+    <div class="slide" onclick="changerConstruction()">
+        <img src="img/iconConstruction.svg" alt="image brique">
         <div class="container-texte-btn-slide">
           <h3>Construction</h3>
           <p>Construisons ensemble votre rêve de maison.</p>
         </div>
     </div>
-    <div class="slide">
-      <img src="img/maconnerie.jpg" alt="maçonnerie">
+    <div class="slide" onclick="changerExtension()">
+      <img src="img/iconeExtension.svg" alt="image maison">
       <div class="container-texte-btn-slide">
-        <h3>Construction</h3>
+        <h3>Extension</h3>
         <p>Construisons ensemble votre rêve de maison.</p>
       </div>
     </div>
-    <div class="slide">
-      <img src="img/maconnerie.jpg" alt="maçonnerie">
+    <div class="slide" onclick="changerAssainissement()">
+      <img src="img/iconeAssainissement.svg" alt="image goute d'eau">
       <div class="container-texte-btn-slide">
-        <h3>Construction</h3>
+        <h3>Assainissement </h3>
         <p>Construisons ensemble votre rêve de maison.</p>
       </div>
     </div>
-    <div class="slide">
-      <img src="img/maconnerie.jpg" alt="maçonnerie">
+    <div class="slide" onclick="changerAmenagementExterieur()">
+      <img src="img/iconeAmenagementExterieur.svg" alt="image maison">
       <div class="container-texte-btn-slide">
-        <h3>Construction</h3>
+        <h3>Aménagement exterieur</h3>
         <p>Construisons ensemble votre rêve de maison.</p>
       </div>
     </div>
-    <div class="slide">
-      <img src="img/maconnerie.jpg" alt="maçonnerie">
+    <div class="slide" onclick="changerRavalement()">
+      <img src="img/iconeRavalement.svg" alt="image ravalement">
       <div class="container-texte-btn-slide">
-        <h3>Construction</h3>
+        <h3>Ravalement</h3>
         <p>Construisons ensemble votre rêve de maison.</p>
       </div>
     </div>
@@ -82,42 +118,45 @@
 
 <div id="page2">
   <div id="container-nos-creations-home">
-    <div>
+    <div id="container-texte-nos-creations-home">
       <h2>Lorem ipsum dolor sit amet. </h2>
-      <p>Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt.</p>
+      <div class="separation"></div>
+      <p>Lorem ipsum dolor sit amet. Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt. Et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt. Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae</p>
       <div class="btn">
-        <a href="noscreations.html">En savoirs plus</a>
+        <a href="nosRealisations.html">En savoirs plus</a>
       </div>
     </div>
-    <img src="img/maison.png" alt="illustration maison">
+    <img src="img/illustrationNosCreationsHome.png" alt="illustration maison">
   </div>
 
   <div id="container-notre-histoire-home">
-    <img src="img/maison2.png" alt="illustration maison">
-    <div>
-      <h2>Lorem ipsum dolor sit amet. </h2>
+    <img src="img/illustrationNotreHistoireHome.png" alt="illustration maison">
+    <div id="container-texte-notre-histoire-home">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <div class="separation"></div>
       <p>Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt.</p>
       <div class="btn">
-        <a href="notrehistoire.html">En savoirs plus</a>
+        <a href="notreHistoire.html">En savoirs plus</a>
       </div>
     </div>
   </div>
 
-  <div id="bandeau-contactez-nous">
+  <div class="bandeau-contactez-nous">
     <p>Besoin d’un artisan pour votre projet ? N’hesitez pas à nous contacter</p>
     <div class="btn">
       <a href="contact.html">Contactez-nous</a>
     </div>
   </div>
 </div>
+
 <footer>
-  <img src="img/logo.png">
+  <img src="img/logo.png" alt="logo">
   <h4>Localisation</h4>
   <p>8 ZA de la Grouas 72190 Neuville-sur-Sarthe</p>
   <h4>Téléphone</h4>
-  <p>0243248588</p>
+  <p><a href="tel:0243248588">0243248588</a></p>
   <div class="separation-footer"></div>
-  <p>Mentions légales - ©2020 FPE Maçonnerie - Réalisé par : <a href="https://soleadmedia.com">Soleadmedia</a></p>
+  <p><a href="">Mentions légales</a> - ©2020 FPE Maçonnerie - Réalisé par : <a href="https://soleadmedia.com">Soleadmedia</a></p>
 </footer>
 </body>
 </html>
