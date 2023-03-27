@@ -122,6 +122,11 @@ a{
     width: 340px;
 }
 
+#btn-slide-container2{
+    display: none;
+}
+
+
 .slide{
     width: 326px;
     height: 94px;
@@ -662,4 +667,16 @@ footer h4{
     font-size: 20px;
     font-weight: 400;
     margin-top: 0;
+}
+
+#mySidenav{
+    display: none;
+}
+
+#openBtn{
+    display: none;
+}
+
+.burger-icon{
+    display: none;
 }

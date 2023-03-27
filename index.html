@@ -8,6 +8,8 @@
     <meta name="keywords" content="maçonnerie, construction, rénovation, façade, ravalement, extension, assainissement, aménagment exterieur">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 
     <link rel="icon" href="img/favicon.svg" />
 
@@ -23,7 +25,6 @@
         document.getElementById("titre-header").textContent = "La div a été changée !";
         document.getElementById("paragraphe-header").textContent = "Le texte il a changer";
         document.getElementById("bouton-header").href = "construction.html";
-
       }
 
       function changerExtension() {
@@ -59,6 +60,52 @@
 <body>
 <header>
   <a href="index.html"><img id="logo-header" src="img/logo.png" alt="logo"></a>
+    <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+            <div class="traitSousMenu"></div>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="notreHistoire.html">Notre histoire</a></li>
+            <li><a href="nosRealisations.html">Nos créations</a></li>
+            <br>
+            <li><a style="color: #FF8233" href="#">- Nos solutions -</a></li>
+            <br>
+            <li><a href="construction.html">Construction</a></li>
+            <li><a href="extension.html">Extension</a></li>
+            <li><a href="assainissement.html">Assainissement</a></li>
+            <li><a href="amenagementExterieur.html">Aménagement exterieur</a></li>
+            <li><a href="ravalement.html">Ravalement</a></li>
+            <div class="traitSousMenu"></div>
+
+            <a class="boutonSousMenu" href="contact.html"><div class="btn">Contact</div></a>
+        </ul>
+    </div>
+
+    <a href="#" id="openBtn">
+        <script>
+            var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+                sidenav.classList.add("active");
+            }
+
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+                sidenav.classList.remove("active");
+            }
+        </script>
+        <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </a>
     <nav>
         <ul>
           <li><a href="index.html">Accueil</a></li>
@@ -73,7 +120,7 @@
   <div id="container-text">
     <h2 id="titre-header">Lorem ipsum dolor sit amet. </h2>
     <p id="paragraphe-header">Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt.</p>
-    <div class="btn">
+    <div class="btn" id="btn-header">
       <a id="bouton-header" href="construction.html">En savoirs plus</a>
     </div>
   </div>
@@ -82,64 +129,82 @@
         <img src="img/iconConstruction.svg" alt="image brique">
         <div class="container-texte-btn-slide">
           <h3>Construction</h3>
-          <p>Construisons ensemble votre rêve de maison.</p>
+          <p>Construisons ensemble votre maison de rêve.</p>
         </div>
     </div>
     <div class="slide" onclick="changerExtension()">
       <img src="img/iconeExtension.svg" alt="image maison">
       <div class="container-texte-btn-slide">
         <h3>Extension</h3>
-        <p>Construisons ensemble votre rêve de maison.</p>
+        <p>Construisons ensemble votre maison de rêve. </p>
       </div>
     </div>
     <div class="slide" onclick="changerAssainissement()">
       <img src="img/iconeAssainissement.svg" alt="image goute d'eau">
       <div class="container-texte-btn-slide">
         <h3>Assainissement </h3>
-        <p>Construisons ensemble votre rêve de maison.</p>
+        <p>Construisons ensemble votre maison de rêve.</p>
       </div>
     </div>
     <div class="slide" onclick="changerAmenagementExterieur()">
       <img src="img/iconeAmenagementExterieur.svg" alt="image maison">
       <div class="container-texte-btn-slide">
         <h3>Aménagement exterieur</h3>
-        <p>Construisons ensemble votre rêve de maison.</p>
+        <p>Construisons ensemble votre maison de rêve.</p>
       </div>
     </div>
     <div class="slide" onclick="changerRavalement()">
       <img src="img/iconeRavalement.svg" alt="image ravalement">
       <div class="container-texte-btn-slide">
         <h3>Ravalement</h3>
-        <p>Construisons ensemble votre rêve de maison.</p>
+        <p>Construisons ensemble votre maison de rêve.</p>
       </div>
     </div>
   </div>
+
+    <div id="btn-slide-container2">
+        <a href="construction.html"><div class="slide">
+            <img src="img/iconConstruction.svg" alt="image brique">
+            <div class="container-texte-btn-slide">
+                <h3>Construction</h3>
+                <p>Construisons ensemble votre maison de rêve.</p>
+            </div>
+        </div>
+        </a>
+        <a href="extension.html"><div class="slide">
+            <img src="img/iconeExtension.svg" alt="image maison">
+            <div class="container-texte-btn-slide">
+                <h3>Extension</h3>
+                <p>Construisons ensemble votre maison de rêve. </p>
+            </div>
+        </div>
+        </a>
+        <a href="assainissement.html"><div class="slide">
+            <img src="img/iconeAssainissement.svg" alt="image goute d'eau">
+            <div class="container-texte-btn-slide">
+                <h3>Assainissement </h3>
+                <p>Construisons ensemble votre maison de rêve.</p>
+            </div>
+        </div>
+        </a>
+        <a href="amenagementExterieur.html"><div class="slide">
+            <img src="img/iconeAmenagementExterieur.svg" alt="image maison">
+            <div class="container-texte-btn-slide">
+                <h3>Aménagement exterieur</h3>
+                <p>Construisons ensemble votre maison de rêve.</p>
+            </div>
+        </div>
+        </a>
+        <a href="ravalement.html"><div class="slide">
+            <img src="img/iconeRavalement.svg" alt="image ravalement">
+            <div class="container-texte-btn-slide">
+                <h3>Ravalement</h3>
+                <p>Construisons ensemble votre maison de rêve.</p>
+            </div>
+        </div>
+        </a>
+    </div>
 </div>
-
-<div id="page2">
-  <div id="container-nos-creations-home">
-    <div id="container-texte-nos-creations-home">
-      <h2>Lorem ipsum dolor sit amet. </h2>
-      <div class="separation"></div>
-      <p>Lorem ipsum dolor sit amet. Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt. Et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt. Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae</p>
-      <div class="btn">
-        <a href="nosRealisations.html">En savoirs plus</a>
-      </div>
-    </div>
-    <img src="img/illustrationNosCreationsHome.png" alt="illustration maison">
-  </div>
-
-  <div id="container-notre-histoire-home">
-    <img src="img/illustrationNotreHistoireHome.png" alt="illustration maison">
-    <div id="container-texte-notre-histoire-home">
-      <h2>Lorem ipsum dolor sit amet.</h2>
-      <div class="separation"></div>
-      <p>Qui quis enim ab excepturi facilis et sunt repellendus est voluptatum dignissimos et enim vitae ut quas architecto ab similique deserunt.</p>
-      <div class="btn">
-        <a href="notreHistoire.html">En savoirs plus</a>
-      </div>
-    </div>
-  </div>
 
   <div class="bandeau-contactez-nous">
     <p>Besoin d’un artisan pour votre projet ? N’hesitez pas à nous contacter</p>

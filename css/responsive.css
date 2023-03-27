@@ -1,0 +1,214 @@
+@media (max-width: 1576px){
+    #container-notre-histoire{
+        flex-wrap: wrap;
+    }
+
+    #container-notre-histoire img{
+        display: none;
+    }
+
+    #container-texte-notre-histoire{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    /*--------------------Burger menu----------------------*/
+
+    #mySidenav{
+        display: unset;
+    }
+
+    /* Sidenav menu */
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: -250px;
+        background-color: #ffffff;
+        padding-top: 60px;
+        transition: right 0.5s ease-out;
+    }
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 15px;
+        color: #1e1c1c;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #FF8233;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Active class */
+    .sidenav.active {
+        right: 0;
+    }
+
+    /* Close btn */
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 36px;
+    }
+
+    .traitSousMenu{
+        border-top: 1px solid #FF8233;
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    .boutonSousMenu{
+        margin-top: 30px;
+    }
+
+    #containerReseauSousMenu{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #containerReseauSousMenu img{
+        width: 70px;
+        margin-right: 20px;
+    }
+
+    .burger-icon{
+        display: unset;
+    }
+
+
+    /* Icône burger */
+    .burger-icon span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: #FF8233;
+        margin: 6px 0;
+    }
+
+    #openBtn{
+        margin-top: 35px;
+        margin-right: 20px;
+        margin-left: 0;
+        float: right;
+        right: 0;
+        position: absolute;
+        display: unset;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header .btn{
+        display: none;
+    }
+
+    .boutonSousMenu .btn{
+        width: 200px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #FF8233;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+    }
+    /*------------------------------------------*/
+
+    #container-text{
+        width: 300px;
+        margin-left: 50px;
+    }
+
+    .container-image-nos-realisation img{
+        margin: 0 auto;
+    }
+
+    .container-image-service{
+        gap: 20px;
+        width: 100%;
+    }
+
+    .container-image-service img{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    }
+
+@media (max-width: 1017px) {
+    #map{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #container-text{
+        display: none;
+    }
+
+    #btn-slide-container{
+        display: none;
+    }
+
+    .bandeau-contactez-nous p{
+        font-size: 25px;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .container-image-nos-realisation img{
+        width: 100%;
+    }
+
+    #background-notre-histoire p{
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .titre-exemple-service p{
+        width: 100%;
+    }
+
+    #container-coordonnee{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    #btn-slide-container2{
+        margin-top: 100px;
+        width: 100%;
+        display: unset;
+    }
+
+    #logo-header{
+        width: 150px;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
