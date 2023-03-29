@@ -213,3 +213,24 @@
     }
 }
 
+@media (max-width: 390px) {
+    header{
+        height: 70px;
+    }
+
+    #logo-header{
+        width: 100px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+
+    #openBtn{
+        margin-top: 20px;
+    }
+
+    #btn-slide-container2{
+        margin-top: 50px;
+    }
+}
+
